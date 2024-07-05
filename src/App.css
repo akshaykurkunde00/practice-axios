@@ -5,8 +5,13 @@
   font-family: Arial, sans-serif;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 h1, h2 {
-  text-align: center;
   color: #333;
 }
 
@@ -17,13 +22,19 @@ ul {
 
 li {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   padding: 10px;
   margin: 5px 0;
   background: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 5px;
+}
+
+li .book-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .button-group {
@@ -35,6 +46,7 @@ button {
   padding: 5px 10px;
   border: none;
   border-radius: 3px;
+  margin-top: auto;
   background-color: #007bff;
   color: white;
   cursor: pointer;
@@ -63,4 +75,8 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #218838;
+}
+
+.add-book-button {
+  margin-bottom: 20px;
 }
